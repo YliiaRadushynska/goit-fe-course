@@ -1,0 +1,160 @@
+html {
+	box-sizing: border-box;
+}
+/* При переопределении значений свойств - они будут наследоваться */
+*,
+*::before,
+*,::after {
+	box-sizing: inherit;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	/* background-color: #125245; */
+}
+
+body {
+	font-family: 'Playfair Display', 'Arial', sans-serif;
+	color: #626262;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+img {
+	display: block;
+	min-width: 100%;
+	height: auto;
+} 
+
+.page-header { 
+	margin-bottom: 100px;
+} 
+
+.main-menu {
+	padding-top: 72px;
+}
+
+/* SITE NAVIGATION */
+.site-navigation {
+	display: inline-block;
+	/* это хак*/
+	width: 900px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	list-style: none;
+}
+
+.site-navigation li {
+	display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+	margin-right: 108px;
+}
+
+/* Контекстный селектор */
+.site-navigation a {
+	color: #626262;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 24px;
+}
+
+/* чтобы можно было ходить tab-ом по странице */
+.site-navigation a:hover, 
+.site-navigation a:focus{
+	color: #03a9f4;
+}
+
+/* FEATURES SECTION */
+.features {
+	margin-bottom: 52px;
+}
+
+/* features-list */
+.features-list {
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.features-list-item {
+	display: inline-block;
+	width: 420px;
+	margin-bottom: 131px;
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.features-list-item:not(:nth-child(2n)) {
+	margin-right: 60px;
+}
+
+.features-list-item.features-list-item:nth-last-child(-n+2) {
+	margin-bottom: 0;
+}
+
+.features-list-item p {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.image {
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+/* line-height AVTO = 14px(font-size)*1.2...округляем к большему */
+.theme {
+	margin: 0 0 26px;
+	font-family: 'Ubuntu', 'Arial', sans-serif;
+	color: #b4ad9e;
+	text-transform: uppercase;
+	line-height: 17px;
+}
+
+.features-list-item h2 {
+	margin-bottom: 35px;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+} 
+
+.page-footer {
+	margin-bottom: 70px;
+}
+
+.page-footer-position {
+	margin-left: 358px;
+}
+
+.load-button {
+	border: 1px solid rgb(98, 98, 98);
+	padding: 20px 34px;
+	margin: 0;
+	/* width: 164px;  */
+	/* height: 60px; */
+	font-size: 20px;
+	line-height: 24px;
+	color: #626262;
+	text-align: center;
+	background-color: #fff;
+	font-weight: 400;
+	cursor: pointer;
+}

@@ -1,0 +1,174 @@
+html {
+	box-sizing: border-box;
+}
+/* При переопределении значений свойств - они будут наследоваться */
+*,
+*::before,
+*,::after {
+	box-sizing: inherit;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Playfair Display', 'Arial', sans-serif;
+	color: #fcf9f9;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+img {
+	display: block;
+	min-width: 100%;
+	height: auto;
+} 
+
+.page-header { 
+	margin-bottom: 50px; 
+	background-color: #642bce;
+} 
+
+.main-menu {
+	padding: 50px 0;
+}
+
+/* SITE NAVIGATION */
+.site-navigation {
+	display: inline-block;
+	/* это хак*/
+	width: 1000px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	list-style: none;
+}
+
+.site-navigation li {
+	display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+	margin-right: 75px;
+}
+
+/* Контекстный селектор */
+.site-navigation a {
+	color: #c8f403;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 24px;
+}
+
+.site-navigation a:hover, 
+.site-navigation a:focus{
+	/* чтобы можно было ходить tab-ом по странице */
+	color: #f75e2fbd;
+}
+
+/* MAIN MENU */
+.main-content {
+	margin-bottom: 100px;
+}
+
+/* FEATURES SECTION */
+.wrapper-1 {
+	width: 470px;
+	margin: 0 auto 100px;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.features {
+	margin: 0;
+	padding: 30px;
+	background-color: rgb(224, 152, 133);
+}
+
+.image {
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+.theme {
+	margin: 0 0 26px;
+	color: #b4ad9e;
+	text-transform: uppercase;
+	line-height: 17px;
+}
+
+.features h2 {
+	margin-bottom: 35px;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.features p {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+/* WRAPPER-2 */
+.wrapper-2 {
+	width: 960px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.features-list-item {
+	display: inline-block;
+	width: 420px;
+	margin-bottom: 131px;
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.features-list-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.features-list-item.features-list-item:nth-last-child(-n+2) {
+	margin-bottom: 0;
+}
+
+/* line-height AVTO = 14px(font-size)*1.2...округляем к большему */
+.theme {
+	margin: 0 0 26px;
+	font-family: 'Ubuntu', 'Arial', sans-serif;
+	color: #b4ad9e;
+	text-transform: uppercase;
+	line-height: 17px;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+} 
+
+.page-footer {
+	margin-bottom: 70px;
+}
+
+.page-footer-position {
+	display: block;
+	background-color: rgb(62, 197, 231);
+	margin: 0 auto;
+	width: 960px;
+	text-align: center;
+	box-shadow: 0 0 5px 5px rgba(5, 69, 247, 0.2);
+}
+
+.color {
+	color: rgb(250, 11, 83);
+}
+
