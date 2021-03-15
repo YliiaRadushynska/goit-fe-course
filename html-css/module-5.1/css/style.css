@@ -9,9 +9,8 @@ html {
 }
 
 .container {
-	width: 1110px;
+	width: 100%;
 	margin: 0 auto;
-	background-color: #e0f761; 
 }
 
 body {
@@ -20,10 +19,6 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_f8tg7bo1q38eGNz4gWRvFcsBw5yKBwKTQ&usqp=CAU);
-	/* linear-gradient(rgba(11, 164, 252, 0.3)); */
-	/* background-repeat: repeat;
-	block-size: cover; */
 }
 
 img {
@@ -38,248 +33,147 @@ img {
 	clear: both;
 }
 
-.page-header { 
-	margin-bottom: 62px;
-	border: 2px solid #48690a;
-	box-shadow: 0 14px 4px rgba(12, 87, 2, 0.918);	
-} 
-
-.main-menu {
-	padding: 38px 0;
+/* Задание 1 */
+.background {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 2000px;
+	background: linear-gradient(rgba(12, 240, 209, 0.3), rgba(12, 240, 209, 0.3)),
+	url('https://png.pngtree.com/thumb_back/fw800/background/20190703/pngtree-vector-white-background-with-abstract-geometric-pattern-of-3d-tr-image_282961.jpg'); 
 }
 
-.site-logo {
+/* Задание 2 */
+.box {
+	position: absolute;
+	top: 100px;
+	left: 760px;
+	width: 400px;
+	height: 400px;
+	background-color: #424242;
+	box-shadow: 0 0 50px rgba(221, 24, 178, 0.85);
+}
+
+.box-sizes {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.box-1 {
+	background-color: #228B22;
+	top: 0;
+	left: 0;
+}
+
+.box-2 {
+	background-color: #B22222;
+	top: 0;
+	right: 0;
+}
+
+.box-3 {
+	background-color: #0000CD;
+	bottom: 0;
+	left: 0;
+}
+
+.box-4 {
+	background-color: #FFFF00;
+	bottom: 0;
+	right: 0;
+}
+
+.box-5 {
+	background-color: #FF4500;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box-6 {
+	background-color: #EE82EE;
+	top: 0;
+	left: 150px;
+}
+
+.box-7 {
+	background-color: #FF0000;
+	top: 150px;
+	left: 0;
+}
+
+.box-8 {
+	background-color: #87CEEB;
+	top: 150px;
+	right: 0;
+}
+
+.box-9 {
+	background-color: #00FF00;
+	bottom: 0;
+	left: 150px;
+}
+
+/* Задание 3 */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 900px;
+	max-height: 200px;
+	margin: 540px auto;
+	background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%,	rgba(12, 240, 209, 0.3) 100%);
+	box-shadow: 0 0 70px rgba(238, 174, 202, 0.85);
+	border-radius: 5%;
+}
+
+.menu {
+	list-style: none;
+	padding: 10px;
+	font-style: 16px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.menu-item {
+	position: relative;
 	display: inline-block;
-	padding-left: 10px;
 }
 
-/* SITE NAVIGATION */
-.site-navigation {
-	float: right;
-	width: 485px;
-	margin: 3px 0 0;
-	padding: 0;
-	font-family: 'Open Sans', 'Arial', sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 11px;
-	list-style: none;
-}
-
-.site-navigation li {
-	float: left;
-}
- 
-.site-navigation li:not(:last-child) {
-	margin-right: 33px;
-} 
-
-.site-navigation a {
-	color: #0f0101;
-	font-weight: 700;
-	text-transform: uppercase;
+.menu-item > a,
+.submenu-item > a {
+	display: inline-block;
+	padding: 15px 15px;
+	color: #0000CD;
+	background: radial-gradient(circle, rgba(174,238,197,1) 0%, rgba(205,191,203,1) 34%, rgba(233,148,208,1) 100%);
 	text-decoration: none;
-	line-height: 11px;
 }
 
-.site-navigation a:hover, 
-.site-navigation a:focus{
-	color: #1abc9c;
+.menu-item > a:hover,
+.submenu-item > a:hover {
+	background: #0cf0d1;
+	color: aliceblue;
 }
 
-
-/* TEAM LIST */
-.team-container {
-	max-width: 480px;
-	background-color: #e0f761;
-	margin: auto;
-	padding: 0;
-}
-
-.team-list {
-	border: 2px solid #212121;
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);	
-	padding: 5px;
+.submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
 	list-style: none;
-}
-
-.team-list li {
-	padding: 4px 0;
-	font-size: 18px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.team-list a {
-	text-decoration: none;
-	color: #0E1116;
-}
-
-.team-list li:not(:last-child) {
-	margin-bottom: 10px;
-}
-
-.team-list li:nth-child(-n + 3) {
-	background-color: #88292F;
-}
-
-.team-list li:nth-child(n + 4) {
-	background-color: #5DB7DE;
-}
-
-.team-list li:nth-child(n + 7) {
-	background-color: #0D5D56;
-}
-
-/* 
-* Последовательно раскомментируйте CSS-правила и посмотрите результат */
-
-/* Выберет первый элемент в коллекции соседей */
-/* .list li:first-child {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все элементы в коллекции соседей кроме первого*/
-/* .list li:not(:first-child) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет последний элемент в коллекции соседей */
-/* .list li:last-child {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все элементы в коллекции соседей кроме последнего*/
-/* .list li:not(:last-child) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все не четные элементы коллекции */
-/* .list li:nth-child(odd) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все четные элементы коллекции */
-/* .list li:nth-child(even) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все элементы коллекции начиная с третьего*/
-/* .list li:nth-child(n + 3) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет первые 3 элемента коллекции*/
-/* .list li:nth-child(-n + 3) {
-  background-color: #03a9f4;
-} */
-
-/* COLORS */
-.colors-container {
-	max-width: 380px;
-	background-color: #e0f761;
-	margin: auto;
 	padding: 0;
+	/* background-color: blue; */
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.color-list {
-	border: 3px solid #270369;
-	box-shadow: 0 18px 34px rgba(61, 3, 100, 0.25), 0 14px 4px rgba(53, 2, 87, 0.22);	
-	padding: 5px;
-	list-style: none;
+.menu-item:hover > .submenu {
+	display: block;
 }
 
-.color-list li {
-	padding: 2px 0;
-	font-size: 16px;
-	text-align: center;
-	text-transform: uppercase;
+.submenu-item {
+	white-space: nowrap;
 }
-
-.color-list a {
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	color: #0E1116;
-}
-
-.color-list a::before {
-	content: "\2192";
-}
-
-.aliceblue:hover {
-	color: #F0F8FF;
-}
-
-.aqua:hover {
-	color: #00FFFF;
-}
-
-.blue:hover {
-	color: #0000FF;
-}
-
-.azure:hover {
-	color: #F0FFFF;
-}
-
-.aquamarine:hover {
-	color: #7FFFD4;
-}
-
-.chartreuse:hover {
-	color: #7FFF00;
-}
-
-.lavenderblush:hover {
-	color: #FFF0F5;
-}
-
-.lightpink:hover {
-	color: #FFB6C1;
-}
-
-.hotpink:hover {
-	color: #FF69B4;
-}
-
-/* NUMBER */
-.number-container {
-	box-sizing: border-box;
-	max-width: 380px;
-	background-color: #e0f761;
-	margin: auto;
-	padding: 0;
-}
-
-.number-list {
-	counter-reset: count-number;
-	border: 3px solid #270369;
-	box-shadow: 0 18px 34px rgba(61, 3, 100, 0.25), 0 14px 4px rgba(53, 2, 87, 0.22);	
-	padding: 5px;
-	list-style: none;
-}
-
-.number-list li {
-	counter-increment: count-number;
-	padding: 2px 0;
-	font-size: 16px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-p:before {
-	content : counter(count-number, upper-roman);
-	margin-right: 4px;
-	padding: 2px;
-	color: #f82d09;
-	border: 1px solid #0E1116;
-	box-shadow: 0 2px 4px rgb(98, 98, 98);
-	text-align: center;
-}
-
-
-
 
 
 
