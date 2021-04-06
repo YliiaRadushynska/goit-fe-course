@@ -1,0 +1,35 @@
+@media (min-width: 940px) {
+
+	.container {
+		min-width: 960px;
+		padding: 0 10px;
+	}
+
+	.header-inner {
+		padding: 0;
+	}
+
+	.after-head-title {
+		margin: 0 auto;
+	}
+
+	.after-head-subtitle {
+		margin: 0 auto;
+		padding-top: 36px;
+	}
+
+	.partners-list {
+		width: 100%;
+	}
+
+	.partners-partner:nth-child(n+3) {
+    padding-top: 0;
+}
+
+	/* .header {
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 48px;
+	} */
+
+}
