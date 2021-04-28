@@ -1,0 +1,43 @@
+link
+
+page-header
+
+page-nav
+	page-nav__site-navigation (для width)
+
+container
+
+site-logo
+	site-logo__img
+
+site-navigation
+	site-navigation__item
+	site-navigation__link
+
+after-head
+	
+
+	banner
+
+	features
+		features__list
+		features__item
+		features__icon
+			features__icon--tools
+		features__item--title
+		features__item--text
+
+team
+	team__list
+	team__item
+	team__item-img
+	team__item-name
+	team__item-occupation
+	team__item-about
+
+socials
+	socials__item
+	socials__link
+	socials__icon
+
+

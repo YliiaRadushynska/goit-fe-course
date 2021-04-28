@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/roboto-v20-latin-regular.woff');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-v14-latin-700.woff');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-v20-latin-300.woff');
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-v20-latin-regular.woff');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Kaushan Script';
+	src: url('../fonts/roboto-v20-latin-regular.woff');
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* kaushan-script-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Kaushan Script';
+	src: url('../fonts/kaushan-script-v9-latin-regular.woff');
+  font-style: normal;
+  font-weight: 400;
+}

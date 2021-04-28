@@ -1,0 +1,147 @@
+.page-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 19px;
+	width: 100%;
+} 
+
+.page-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	min-height: 90px;
+}
+
+.site-logo {
+	display: inline-block;
+	/* animation: logo-appear 1s linear; */
+} 
+
+/* @keyframes logo-appear {
+	0% {
+		transform:translateX(-200px);
+		opacity: 0;
+	}
+
+	50% {
+		transform:translateY(0);
+		opacity: 1;
+		transform: rotate(0);
+	}
+
+	100% {
+		transform:rotate(360deg);
+	}
+} */
+
+/* SITE NAVIGATION */
+.site-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 620px;
+	        flex: 0 0 620px;
+	/* width: 490px; */
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.site-navigation__link {
+	display: block;
+	font-family: var(--ff-montserrat);
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--white-color);
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: color 1s linear;
+	-o-transition: color 1s linear;
+	transition: color 1s linear;
+}
+
+.site-navigation__link::after {
+	content: '';	
+	display: block;
+	min-width: 100%;
+	height: 3px;
+	background-color: var(--yellow-color);
+	margin: 10px 0 0;
+	opacity: 0; 
+}
+
+/* чтобы можно было ходить tab-ом по странице */
+.site-navigation__link:hover,
+.site-navigation__link:focus { 
+	color: var(--yellow-color);
+}
+
+.site-navigation__link:hover::after,
+.site-navigation__link:focus::after { 
+	opacity: 1;
+}
+
+/* OVERLAY */
+
+.overlay-icon__item{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.overlay-icon__link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 18px;
+	height: 18px;
+}
+
+
+.icon__shopping-cart {
+	background-image: url('../img/icons/header/SHOPPING_CART.png');
+}
+
+.icon__magnifying {
+	background-image: url('../img/icons/header/MAGNIFYING.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

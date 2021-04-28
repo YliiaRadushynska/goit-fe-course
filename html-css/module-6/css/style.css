@@ -333,11 +333,7 @@ h3 {
 	content: ''; */
 }
 
-.overlay-icon li{
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-}
+
 
 .overlay-icon a {
 	display: flex;

@@ -1,0 +1,73 @@
+.about {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	border-top: 1px solid rgb(229, 229, 229);
+	}
+
+.about a {
+	text-decoration: none;
+	color: var(--pink-color);
+}
+
+.about__text {
+	font-family: var(--ff-montserrat);
+	color: var(--black-color);
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	margin: 22px 0;
+}
+
+.form__subscribe {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 380px;
+	margin: 10px 0 12px;
+}
+
+.form__subscribe input[type="email"] {
+	width: 100%;
+	font-family: var(--ff-roboto);
+	font-size: 15px;
+	line-height: 18px;
+	color: var(--light-grey-color);
+	font-weight: 300;
+	text-decoration: none;
+	font-style: italic;
+	border: none;
+	cursor: pointer;
+	background-color: var(--white-color);
+	border: 1px solid rgb(229, 229, 229);
+	border-right-style: none;
+	padding: 12px 0 12px 12px;
+}
+
+.form__subscribe input[type="submit"] {
+	font-family: var(--ff-montserrat);
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: var(--white-color);
+	font-weight: 700;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	background-color: var(--blue-color);
+	padding: 14px 34px;
+}
